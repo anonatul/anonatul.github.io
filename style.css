@@ -1,49 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
-    /*rgb(35, 37, 43)*/
-    background-color: rgb(35, 37, 43);
-    color: rgb(211, 211, 211);
-    font-family: 'Courier New', sans-serif;
-    font-size: 19px;
-    font-weight: 300;
-    padding-top: 20px;
-    padding-left: 20px;
-    text-align: left;   
-  }
+    background-color: #1A2130;
+    font-family: "Inconsolata", monospace;
 
-  .home-greeting {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    
-  }
+}
 
-  .quote {
-    background-color: rgb(36, 36, 36);
-    padding: 20px 20px
-  }
-  
-  
-  .last-update {
-    font-style: italic;
-    font-size: 14px;
-  }
-  
-  button {
-    color:black;
-    background-color: rgb(240, 240, 240);
-    border: 1px solid black;
-    border-color: rgb(255, 255, 255);
-    padding: 1px 10px;
-    text-align: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 400px;
+}
+
+.navbar a {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    transition-duration: 0.5s;
-    cursor: pointer;
-    }
-  
-    
-  button:hover {
-    background-color:rgb(35, 37, 43);
-    color: white;
-  }
+    color: #FDFFE2;
+}
+
+.navbar .nav-links a:hover {
+    color: #83B4FF;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+}
+
+.navbar .logo {
+    font-family: "VT323", monospace;
+    /* font-weight: 400; */
+    font-style: normal;
+    font-size: 70px;
+}
+
+.nav-links {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 20px;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.hero {
+    width: auto;
+    height: 80vh;
+    background-color: #1A2130;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 400px;
+}
+
+.hero img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    margin-right: 200px;
+}
+
+.intro h1 {
+    color: #83B4FF;
+    font-family: "VT323", monospace;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    color: #FDFFE2;
+    font-size: 20px;
+}
